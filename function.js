@@ -73,3 +73,56 @@ console.log(count([1,2,3,4,5]));
 
 console.log(method.sum())
 
+// method declaration 
+
+const testing = {
+    items : [],
+    add(...items)
+    {
+        this.items.push(...items)
+    },
+    get(index)
+    {
+        return this.items[index];
+    }
+
+}
+testing.add("javascript","java","Kotlin", "Php");
+
+console.log(testing.get(1));
+// in above program we define how to push the data in emply array and how to get the added data index.
+
+// object literals shorthand method defination
+
+// Using the arrow => function in the program
+
+const dataValue = (num) =>
+{
+    if(num < 0)
+    {
+        return -(num)+(num);
+    }
+    else
+    {
+        return num;
+    }
+}
+
+
+console.log(dataValue(-15))
+
+
+// using function generator 
+
+function* indexGenerator() // itializing the function generator
+{
+    var index = 0;// initializing the index variable
+    while(true)
+    {
+        yield index++ // incrementing the index
+
+    }
+}
+const g = indexGenerator(); // assigning function to the variable
+console.log(g.next().value); // calling the function
+console.log(g.next().value);
