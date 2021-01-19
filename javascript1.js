@@ -15,3 +15,12 @@ function bulbOff()
 function bulbOn() {
     document.getElementById("myImage").src = 'image/pic_bulbon.gif';
 }
+
+// function calling 
+
+function test()
+{
+    document.getElementById('demo2').innerHTML = "Hello Pradeep";
+    document.getElementById('demo1').innerHTML = "Hello Priti";
+
+}
