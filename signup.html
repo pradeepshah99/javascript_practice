@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Signup </title>
+</head>
+<body>
+    <div class="cointainer-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+
+    <form  >
+        
+       
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name" >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" placeholder="Enter email" id="email" >
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile" id="mobile" >
+        </div>
+
+    <input type="button" value="Submit" class="btn btn-primary" onclick="validateForm()">
+    </form>
+
+            </div>
+            <div class="col-sm-3"></div>
+
+
+        </div>
+    </div>
+<br>
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p><span id='showname'></span></p>
+                </td>
+                <td>
+                    <p><span id='showEmail'></span></p>
+                </td>
+                <td>
+                    <p><span id='password'></span></p>
+                </td>
+                <td>
+                    <p><span id='shownunber'></span></p>
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+<script src="testjs.js"></script>
+</body>
+</html>

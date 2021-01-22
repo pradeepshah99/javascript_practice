@@ -24,3 +24,14 @@ function test()
     document.getElementById('demo1').innerHTML = "Hello Priti";
 
 }
+// learning events
+function hello() {
+    var name = window.prompt('Please enter your name');
+    var age = window.prompt('Please enter your age');
+
+    alert("Hi"+ ""+name+""+"How are you today" +"your age is "+" "+ age);
+
+}
+
+
+

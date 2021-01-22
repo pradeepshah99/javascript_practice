@@ -118,3 +118,11 @@ console.log(test4)
 let test5 = takeArray.forEach(data => console.log(data.id, data.name));
 
 test5;
+
+// javascript events 
+
+// on click events example
+
+
+
+
